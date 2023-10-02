@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과학기술정보통신부</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/report_intro.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- pc -->
+      <header class="pc">
+        <h1 class="logo">
+          <a href="../index.html">
+            <img src="../images/logo2.png" alt="" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="main_nav">
+            <li class="menu menu1">
+              <a href="/" style="font-size: 22px">HOME</a>
+            </li>
+            <li class="menu menu2">
+              <a href="../html/defining.html" style="font-size: 22px"
+                >데이터사업자 안내</a
+              >
+              <div class="sub_menu_wrap">
+                <div class="inner">
+                  <h2 style="width: 235px">데이터사업자 안내</h2>
+                  <ul>
+                    <li class="subMenu subMenu21">
+                      <a href="../html/defining.html">데이터사업자 정의</a>
+                    </li>
+                    <li class="subMenu subMenu22">
+                      <a href="../html/report.html">데이터사업자 신고</a>
+                    </li>
+                    <li class="subMenu subMenu23">
+                      <a href="../html/overview.html">데이터사업자 안내</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu menu3 on">
+              <a href="../html/report_intro.html" style="font-size: 22px">
+                데이터사업자 등록
+              </a>
+              <div class="sub_menu_wrap">
+                <div class="inner">
+                  <h2 style="width: 235px">데이터사업자 등록</h2>
+                  <ul>
+                    <li class="subMenu subMenu31">
+                      <a href="../html/report_intro.html">데이터사업자 신고</a>
+                    </li>
+                    <li class="subMenu subMenu32">
+                      <a href="#">데이터사업자 조회</a>
+                    </li>
+                    <li class="subMenu subMenu33">
+                      <a href="#"> 데이터사업자 신고 현황 </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu menu4">
+              <a href="../html/notice.html" style="font-size: 22px">공지사항</a>
+              <div class="sub_menu_wrap">
+                <div class="inner">
+                  <h2 style="width: 235px">공지사항</h2>
+                  <ul>
+                    <li class="subMenu subMenu41">
+                      <a href="../html/notice.html">공지사항</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="login">
+          <div class="company"><a href="#">Company</a></div>
+          <div class="login_bt"><a href="./login.html">Login ▼</a></div>
+        </div>
+      </header>
+      <!-- mobile -->
+      <header class="mobile">
+        <h1 class="logo">
+          <a href="../index.html">
+            <img src="../images/m_logo.png" alt="" />
+          </a>
+        </h1>
+
+        <input type="checkbox" id="menuicon" />
+        <label for="menuicon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar">
+          <div class="side_nav">
+            <ul>
+              <li>
+                <div>
+                  <a href="../html/defining.html">데이터사업자 안내</a>
+                </div>
+                <ul>
+                  <li><a href="../html/defining.html">데이터사업자 정의</a></li>
+                  <li><a href="../html/report.html">데이터사업자 신고</a></li>
+                  <li><a href="../html/overview.html">데이터사업자 개요</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <a href="#">데이터사업자 신고</a>
+                  </div>
+                  <ul>
+                    <li><a href="#">데이터사업자 신고</a></li>
+                    <li><a href="#">데이터사업자 조회</a></li>
+                    <li><a href="#">데이터사업자 신고현황</a></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <a href="../html/notice.html">공지사항</a>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="login_m"><a href="../html/login.html">Login</a></div>
+      </header>
+      <section>
+        <div class="section_container">
+          <div class="section_title">
+            <div class="section_tit">
+              <h1>데이터 사업자 및 기업소개서 작성</h1>
+              <h3>
+                한국데이터산업협회 데이터 사업자 및 기업소개 작성 페이지 입니다.
+              </h3>
+            </div>
+            <img src="../images/P_IMG.png" alt="" />
+          </div>
+          <div class="section_content">
+            <div class="write_bt">
+              <span>
+                <a
+                  href="javascript:change01()"
+                  id="bt_font01"
+                  style="font-weight: bold"
+                >
+                  데이터사업자
+                </a>
+              </span>
+              <span>
+                <a href="javascript:change02()" id="bt_font02"> 기업소개서 </a>
+              </span>
+            </div>
+            <!-- 데이터사업자 -->
+            <div id="write_wrap01">
+              <div class="report_write" style="border-top: 1px solid #bcbcbc">
+                <div class="write_tit">신고분야</div>
+                <div class="write_cont cont_check">
+                  <div class="check_input">
+                    <input type="checkbox" checked />데이터거래사업자
+                  </div>
+                  <div class="check_input">
+                    <input type="checkbox" />데이터분석제공업자
+                  </div>
+                  <div class="check_input">
+                    <input type="checkbox" />데이터거래사업자,
+                    데이터분석제공업자
+                  </div>
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit business">회사명</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="회사명" />
+                </div>
+                <div class="write_tit business">사업자등록번호</div>
+                <div class="write_cont business_input business_no">
+                  <input type="text" />- <input type="text" /> -
+                  <input type="text" />
+                </div>
+              </div>
+              <!-- 모바일 -->
+              <div class="report_write write_mobile">
+                <div class="write_tit business">회사명</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="회사명" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">사업자등록번호</div>
+                <div class="write_cont business_input business_no">
+                  <input type="text" />- <input type="text" /> -
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit business">대표자</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="대표자" />
+                </div>
+                <div class="write_tit business">홈페이지 주소</div>
+                <div class="write_cont address_input">
+                  <input type="text" placeholder="http://xxxx.xxxx.com" />
+                </div>
+              </div>
+              <!-- 모바일 -->
+              <div class="report_write write_mobile">
+                <div class="write_tit business">대표자</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="대표자" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">홈페이지<br />주소</div>
+                <div class="write_cont address_input">
+                  <input type="text" placeholder="http://xxxx.xxxx.com" />
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit business">전화번호</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="02-0000-0000" />
+                </div>
+                <div class="write_tit business">팩스번호</div>
+                <div class="write_cont address_input">
+                  <input type="text" placeholder="02-0000-0000" />
+                </div>
+              </div>
+              <!-- 모바일 -->
+              <div class="report_write write_mobile">
+                <div class="write_tit business">전화번호</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="02-0000-0000" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">팩스번호</div>
+                <div class="write_cont address_input">
+                  <input type="text" placeholder="02-0000-0000" />
+                </div>
+              </div>
+              <div class="report_write">
+                <div class="write_tit">설립년월일</div>
+                <div class="write_cont create">
+                  <input type="text" />
+                  <img src="../images/달력아이콘.png" alt="" />
+                </div>
+              </div>
+              <div class="report_write report_add">
+                <div class="write_tit write_add">본사소재지</div>
+                <div class="write_cont cont_add">
+                  <div class="add_search">
+                    <input type="text" placeholder="서울특별시 강남구 xxxx" />
+                    <button>주소찾기</button>
+                  </div>
+                  <div class="add_detail">
+                    <input type="text" placeholder="상세주소" />
+                  </div>
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit corpor">기업형태</div>
+                <div class="write_cont corpor_input">
+                  <input type="checkbox" checked />개인
+                  <input type="checkbox" />법인
+                </div>
+                <div class="write_tit corpor">상장여부</div>
+                <div class="write_cont growth_input">
+                  <input type="checkbox" checked />상장
+                  <input type="checkbox" />코스닥 등록
+                  <input type="checkbox" />비상장(비등록)
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit corpor">상장여부</div>
+                <div class="write_cont growth_input">
+                  <input type="checkbox" checked />상장
+                  <input type="checkbox" />코스닥 등록
+                  <input type="checkbox" />비상장(비등록)
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit corpor">상장여부</div>
+                <div class="write_cont growth_input">
+                  <input type="checkbox" checked />상장
+                  <input type="checkbox" />코스닥 등록
+                  <input type="checkbox" />비상장(비등록)
+                </div>
+              </div>
+              <div class="report_write">
+                <div class="write_tit">제공서비스 명칭</div>
+                <div class="write_cont create">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write data_wrap">
+                <div class="write_tit data_business">
+                  제공서비스 데이터<br />
+                  사업내용
+                </div>
+                <div class="write_cont business_detail">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit business">데이터 거래사</div>
+                <div class="write_cont data_check">
+                  <input type="checkbox" />데이터거래사
+                  <p>*데이터거래사 교육이수자가 있을 경우만 체크</p>
+                </div>
+                <div class="write_tit business">거래사 고용인원수</div>
+                <div class="write_cont address_input">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">데이터<br />거래사</div>
+                <div class="write_cont data_check">
+                  <input type="checkbox" />
+                  <p style="color: #000; width: 60px">데이터<br />거래사</p>
+                  <p>*데이터거래사 교육이수자가 있을 경우만 체크</p>
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">거래사 고용인원수</div>
+                <div class="write_cont address_input">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write">
+                <div class="write_tit">담당자 이름</div>
+                <div class="write_cont report_name">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit business">담당자 부서</div>
+                <div class="write_cont business_input">
+                  <input type="text" />
+                </div>
+                <div class="write_tit business">담당자 직책</div>
+                <div class="write_cont address_input">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">담당자 부서</div>
+                <div class="write_cont business_input">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">담당자 직책</div>
+                <div class="write_cont address_input">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit business">담당자 연락처</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="010-0000-0000" />
+                </div>
+                <div class="write_tit business">담당자 이메일</div>
+                <div class="write_cont address_input">
+                  <input type="text" placeholder="aaa@aaaa.com" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">담당자<br />연락처</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="010-0000-0000" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">담당자<br />이메일</div>
+                <div class="write_cont address_input">
+                  <input type="text" placeholder="aaa@aaaa.com" />
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit business">로그인 아이디</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="아이디" />
+                </div>
+                <div class="write_tit business">로그인 비밀번호</div>
+                <div class="write_cont address_input">
+                  <input type="text" placeholder="비밀번호" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">로그인<br />아이디</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="아이디" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">로그인<br />비밀번호</div>
+                <div class="write_cont address_input">
+                  <input type="text" placeholder="비밀번호" />
+                </div>
+              </div>
+              <div class="report_write">
+                <div class="write_tit">신고인 성명</div>
+                <div class="write_cont report_name">
+                  <input type="text" />
+                </div>
+              </div>
+              <p>
+                ▶ 로그인 아이디와 비밀번호찾기 시 사업자등록번호와 담당자정보를
+                알고 있어야 합니다.
+              </p>
+              <p>
+                ▶ 데이터사업자 신고 현황 및 신고확인서 출력은 로그인 후에 확인
+                가능 합니다.
+              </p>
+              <p>
+                ▶ 위 모든 내용은 사실대로 작성했고, 향후 거짓 작성으로 인한 모든
+                불일익을 감수할 것을 서약하며, 데이터 산업 진흥 및 이용촉진에
+                관한 기본법 제 16조 제1항 및 같은 법 시행규칙 제 4조 제 1항에
+                따라 위와 같이 신고합니다.
+              </p>
+              <div class="report_write write_pc">
+                <div class="write_tit business">사업자등록증</div>
+                <div class="write_cont business_input">
+                  <button>파일등록</button>
+                </div>
+                <div class="write_tit business">법인인감/대표자성명</div>
+                <div class="write_cont business_input">
+                  <button>파일등록</button>
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">사업자<br />등록증</div>
+                <div class="write_cont business_input">
+                  <button>파일등록</button>
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit business">법인인감 /<br />대표자성명</div>
+                <div class="write_cont business_input">
+                  <button>파일등록</button>
+                </div>
+              </div>
+              <div class="company_bt">
+                <button>이전으로</button>
+                <button style="background-color: #0e81a0">신고하기</button>
+              </div>
+            </div>
+            <!-- 기업소개서 -->
+            <div id="write_wrap02">
+              <div
+                class="report_write write_pc"
+                style="border-top: 1px solid #bcbcbc"
+              >
+                <div class="write_tit business">기업명</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="기업명" />
+                </div>
+                <div class="write_tit business">대표자명</div>
+                <div class="write_cont address_input">
+                  <input type="text" placeholder="대표자명" />
+                </div>
+              </div>
+              <div
+                class="report_write write_mobile"
+                style="border-top: 1px solid #bcbcbc"
+              >
+                <div class="write_tit business">기업명</div>
+                <div class="write_cont business_input">
+                  <input type="text" placeholder="기업명" />
+                </div>
+              </div>
+              <div
+                class="report_write write_mobile"
+                style="border-top: 1px solid #bcbcbc"
+              >
+                <div class="write_tit business">대표자명</div>
+                <div class="write_cont address_input">
+                  <input type="text" placeholder="대표자명" />
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit business">설립일자</div>
+                <div class="write_cont business_input date_input">
+                  <input type="text" />
+                  <img src="../images/달력아이콘.png" alt="" />
+                </div>
+                <div class="write_tit business">대표자 메일</div>
+                <div class="write_cont address_input">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit business">자본금</div>
+                <div class="write_cont business_input date_input">
+                  <input type="text" />
+                  <p>억원</p>
+                </div>
+                <div class="write_tit business">종업원 수</div>
+                <div class="write_cont address_input">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write">
+                <div class="write_tit">설립년월일</div>
+                <div class="write_cont create">
+                  <input type="text" />
+                  <img src="../images/달력아이콘.png" alt="" />
+                </div>
+              </div>
+              <div class="report_write report_add">
+                <div class="write_tit write_add">본사소재지</div>
+                <div class="write_cont cont_add">
+                  <div class="add_search">
+                    <input type="text" placeholder="서울특별시 강남구 xxxx" />
+                    <button>주소찾기</button>
+                  </div>
+                  <div class="add_detail">
+                    <input type="text" placeholder="상세주소" />
+                  </div>
+                </div>
+              </div>
+              <div class="report_write write_pc">
+                <div class="write_tit">주력 사업분야</div>
+                <div class="write_cont create">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write write_mobile">
+                <div class="write_tit">주력<br />사업분야</div>
+                <div class="write_cont create force">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write data_wrap">
+                <div class="write_tit data_business">기업소개</div>
+                <div class="write_cont business_detail">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write data_wrap">
+                <div class="write_tit data_business">기업연혁</div>
+                <div class="write_cont business_detail">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="report_write data_wrap">
+                <div class="write_tit data_business">주요사업</div>
+                <div class="write_cont business_detail">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="company_bt">
+                <button>신고</button>
+                <button>수정</button>
+                <button>변경신고</button>
+                <button style="background-color: #0e81a0">신고확인서</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer_pc">
+        <div class="poster">
+          <div class="poster_bt">
+            <div>
+              <a href="#"><img src="../images/베너버튼3.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="../images/베너버튼2.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="../images/배너버튼2.png" alt="" /></a>
+            </div>
+            <div class="menu-trigger">
+              <a href="#"><img src="../images/베너버튼1.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="banner_img">
+            <img src="../images/개인정보위원회.png" alt="" />
+            <img src="../images/한국진흥정보.png" alt="" />
+            <img src="../images/정보통신진흥원.png" alt="" />
+            <img src="../images/인터넷진흥원.png" alt="" />
+            <img src="../images/한국데이터산업진흥.png" alt="" />
+            <img src="../images/행안부.png" alt="" />
+          </div>
+        </div>
+        <div class="infor">
+          <div>
+            03929) 서울특별시 마포구 성암로 189 중소기업 DMC타워 18층 | 대표전화
+            : (070)8806-2298 / 대표메일 : databiz@kodia.kr
+          </div>
+          <div>All Rights Reserved.</div>
+        </div>
+      </footer>
+      <footer class="footer_m">
+        <div class="infor">
+          <p class="add">서울특별시 XXXX 남부순환로 0번길 우편번호 : 0000</p>
+          <p class="call">대표전화 : (02)0000-0000 / FAX : 02) 0000-0000</p>
+          <p class="business">사업자등록번호 : 000-00-00000, 대표 : 김동한</p>
+          <p class="copy">Copyright(C) 2023KODIA. ALL Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var wrap01 = document.getElementById('write_wrap01');
+      var wrap02 = document.getElementById('write_wrap02');
+      var font01 = document.getElementById('bt_font01');
+      var font02 = document.getElementById('bt_font02');
+      function change01() {
+        wrap01.style.display = 'flex';
+        font01.style.fontWeight = 'bold';
+        wrap02.style.display = 'none';
+        font02.style.fontWeight = '100';
+      }
+      function change02() {
+        wrap01.style.display = 'none';
+        font01.style.fontWeight = '100';
+        wrap02.style.display = 'flex';
+        font02.style.fontWeight = 'bold';
+      }
+    </script>
+  </body>
+</html>

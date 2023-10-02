@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과학기술정보통신부</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/write.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- pc -->
+      <header class="pc">
+        <h1 class="logo">
+          <a href="../index.html">
+            <img src="../images/logo2.png" alt="" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="main_nav">
+            <li class="menu menu1">
+              <a href="/" style="font-size: 22px">HOME</a>
+            </li>
+            <li class="menu menu2">
+              <a href="../html/defining.html" style="font-size: 22px"
+                >데이터사업자 안내</a
+              >
+              <div class="sub_menu_wrap">
+                <div class="inner">
+                  <h2 style="width: 235px">데이터사업자 안내</h2>
+                  <ul>
+                    <li class="subMenu subMenu21">
+                      <a href="../html/defining.html">데이터사업자 정의</a>
+                    </li>
+                    <li class="subMenu subMenu22">
+                      <a href="../html/report.html">데이터사업자 신고</a>
+                    </li>
+                    <li class="subMenu subMenu23">
+                      <a href="../html/overview.html">데이터사업자 안내</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu menu3">
+              <a href="../html/report_intro.html" style="font-size: 22px">
+                데이터사업자 등록
+              </a>
+              <div class="sub_menu_wrap">
+                <div class="inner">
+                  <h2 style="width: 235px">데이터사업자 등록</h2>
+                  <ul>
+                    <li class="subMenu subMenu31">
+                      <a href="../html/report_intro.html">데이터사업자 신고</a>
+                    </li>
+                    <li class="subMenu subMenu32">
+                      <a href="#">데이터사업자 조회</a>
+                    </li>
+                    <li class="subMenu subMenu33">
+                      <a href="#"> 데이터사업자 신고 현황 </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu menu4 on">
+              <a href="../html/notice.html" style="font-size: 22px">공지사항</a>
+              <div class="sub_menu_wrap">
+                <div class="inner">
+                  <h2 style="width: 235px">공지사항</h2>
+                  <ul>
+                    <li class="subMenu subMenu41">
+                      <a href="../html/notice.html">공지사항</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="login">
+          <div class="company"><a href="#">Company</a></div>
+          <div class="login_bt"><a href="./login.html">Login ▼</a></div>
+        </div>
+      </header>
+      <!-- mobile -->
+      <header class="mobile">
+        <h1 class="logo">
+          <a href="../index.html">
+            <img src="../images/m_logo.png" alt="" />
+          </a>
+        </h1>
+
+        <input type="checkbox" id="menuicon" />
+        <label for="menuicon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar">
+          <div class="side_nav">
+            <ul>
+              <li>
+                <div>
+                  <a href="../html/defining.html">데이터사업자 안내</a>
+                </div>
+                <ul>
+                  <li><a href="../html/defining.html">데이터사업자 정의</a></li>
+                  <li><a href="../html/report.html">데이터사업자 신고</a></li>
+                  <li><a href="../html/overview.html">데이터사업자 개요</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <a href="../html/report_intro.html">데이터사업자 신고</a>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="../html/report_intro.html">데이터사업자 신고</a>
+                    </li>
+                    <li><a href="#">데이터사업자 조회</a></li>
+                    <li><a href="#">데이터사업자 신고현황</a></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <a href="../html/notice.html">공지사항</a>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="login_m"><a href="../html/login.html">Login</a></div>
+      </header>
+      <section>
+        <div class="section_container">
+          <div class="section_title">공지사항</div>
+          <div class="section_content">
+            <div class="section_write write_title">
+              <div class="write_tit">제목</div>
+              <div class="write_input">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="section_write">
+              <div class="write_tit">작성자</div>
+              <div class="write_input writer">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="section_write">
+              <div class="write_tit">작성일</div>
+              <div class="write_input date_created">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="section_write write_content">
+              <div class="write_tit">내용</div>
+              <div class="write_input">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="section_write write_answer">
+              <div class="write_tit">답변</div>
+              <div class="write_input">
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="write_bt">
+            <button class="back" onClick="location.href='notice.html'">
+              돌아가기
+            </button>
+            <button class="clear">등록하기</button>
+          </div>
+        </div>
+      </section>
+      <footer class="footer_pc">
+        <div class="poster">
+          <div class="poster_bt">
+            <div>
+              <a href="#"><img src="../images/베너버튼3.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="../images/베너버튼2.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="../images/배너버튼2.png" alt="" /></a>
+            </div>
+            <div class="menu-trigger">
+              <a href="#"><img src="../images/베너버튼1.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="banner_img">
+            <img src="../images/개인정보위원회.png" alt="" />
+            <img src="../images/한국진흥정보.png" alt="" />
+            <img src="../images/정보통신진흥원.png" alt="" />
+            <img src="../images/인터넷진흥원.png" alt="" />
+            <img src="../images/한국데이터산업진흥.png" alt="" />
+            <img src="../images/행안부.png" alt="" />
+          </div>
+        </div>
+        <div class="infor">
+          <div>
+            03929) 서울특별시 마포구 성암로 189 중소기업 DMC타워 18층 | 대표전화
+            : (070)8806-2298 / 대표메일 : databiz@kodia.kr
+          </div>
+          <div>All Rights Reserved.</div>
+        </div>
+      </footer>
+      <footer class="footer_m">
+        <div class="infor">
+          <p class="add">서울특별시 XXXX 남부순환로 0번길 우편번호 : 0000</p>
+          <p class="call">대표전화 : (02)0000-0000 / FAX : 02) 0000-0000</p>
+          <p class="business">사업자등록번호 : 000-00-00000, 대표 : 김동한</p>
+          <p class="copy">Copyright(C) 2023KODIA. ALL Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
