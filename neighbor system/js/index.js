@@ -1,7 +1,7 @@
 // 교통정보 토글
-var menu1 = document.getElementsByClassName('menu01')[0];
-var subMenu01 = document.getElementsByClassName('subMenu01')[0];
-var menu01Img = document.getElementsByClassName('menu01Img')[0];
+var menu1 = document.getElementById('menu01');
+var subMenu01 = document.getElementById('subMenu01');
+var menu01Img = document.getElementById('menu01Img');
 
 var menuToggle1 = false;
 
@@ -20,9 +20,9 @@ menu1.onclick = function () {
 };
 
 // 지역정보 토글
-var menu2 = document.getElementsByClassName('menu02')[0];
-var subMenu02 = document.getElementsByClassName('subMenu02')[0];
-var menu02Img = document.getElementsByClassName('menu02Img')[0];
+var menu2 = document.getElementById('menu02');
+var subMenu02 = document.getElementById('subMenu02');
+var menu02Img = document.getElementById('menu02Img');
 
 var menuToggle2 = false;
 
@@ -41,9 +41,9 @@ menu2.onclick = function () {
 };
 
 // 항공지도 토글
-var menu3 = document.getElementsByClassName('menu3')[0];
-var subMenu03 = document.getElementsByClassName('subMenu03')[0];
-var menu03Img = document.getElementsByClassName('menu03Img')[0];
+var menu3 = document.getElementById('menu03');
+var subMenu03 = document.getElementById('subMenu03');
+var menu03Img = document.getElementById('menu03Img');
 
 var menuToggle3 = false;
 
@@ -62,9 +62,9 @@ menu3.onclick = function () {
 };
 
 // 일반지도 토글
-var menu4 = document.getElementsByClassName('menu04')[0];
-var subMenu04 = document.getElementsByClassName('subMenu04')[0];
-var menu04Img = document.getElementsByClassName('menu04Img')[0];
+var menu4 = document.getElementById('menu04');
+var subMenu04 = document.getElementById('subMenu04');
+var menu04Img = document.getElementById('menu04Img');
 
 var menuToggle4 = false;
 
@@ -83,26 +83,26 @@ menu4.onclick = function () {
 };
 
 // 체크박스 토글
-var check1 = document.getElementsByClassName('check1')[0];
-var check2 = document.getElementsByClassName('check2')[0];
-var check3 = document.getElementsByClassName('check3')[0];
-var check4 = document.getElementsByClassName('check4')[0];
-var check5 = document.getElementsByClassName('check5')[0];
-var check6 = document.getElementsByClassName('check6')[0];
-var check7 = document.getElementsByClassName('check7')[0];
-var check8 = document.getElementsByClassName('check8')[0];
-var check9 = document.getElementsByClassName('check9')[0];
-var check10 = document.getElementsByClassName('check10')[0];
-var subMenu1 = document.getElementsByClassName('subMenu1')[0];
-var subMenu2 = document.getElementsByClassName('subMenu2')[0];
-var subMenu3 = document.getElementsByClassName('subMenu3')[0];
-var subMenu4 = document.getElementsByClassName('subMenu4')[0];
-var subMenu5 = document.getElementsByClassName('subMenu5')[0];
-var subMenu6 = document.getElementsByClassName('subMenu6')[0];
-var subMenu7 = document.getElementsByClassName('subMenu7')[0];
-var subMenu8 = document.getElementsByClassName('subMenu8')[0];
-var subMenu9 = document.getElementsByClassName('subMenu9')[0];
-var subMenu10 = document.getElementsByClassName('subMenu10')[0];
+var check1 = document.getElementById('check1');
+var check2 = document.getElementById('check2');
+var check3 = document.getElementById('check3');
+var check4 = document.getElementById('check4');
+var check5 = document.getElementById('check5');
+var check6 = document.getElementById('check6');
+var check7 = document.getElementById('check7');
+var check8 = document.getElementById('check8');
+var check9 = document.getElementById('check9');
+var check10 = document.getElementById('check10');
+var subMenu1 = document.getElementById('subMenu1');
+var subMenu2 = document.getElementById('subMenu2');
+var subMenu3 = document.getElementById('subMenu3');
+var subMenu4 = document.getElementById('subMenu4');
+var subMenu5 = document.getElementById('subMenu5');
+var subMenu6 = document.getElementById('subMenu6');
+var subMenu7 = document.getElementById('subMenu7');
+var subMenu8 = document.getElementById('subMenu8');
+var subMenu9 = document.getElementById('subMenu9');
+var subMenu10 = document.getElementById('subMenu10');
 
 var checkToggle1 = false;
 var checkToggle2 = false;
@@ -207,13 +207,12 @@ subMenu10.onclick = function () {
 };
 
 // 지번 도로명 토글
-var searchBt = document.getElementsByClassName('searchBt')[0];
+var searchBt = document.getElementById('searchBt');
 
 var toggle = false;
 
 searchBt.onclick = function () {
   if (!toggle) {
-    console.log('gd');
     searchBt.style.backgroundImage = 'url(./images/serch_icon_2.png)';
     toggle = true;
   } else {
@@ -223,8 +222,8 @@ searchBt.onclick = function () {
 };
 
 // 미니맵
-var minmap = document.getElementsByClassName('minmap0')[0];
-var minmapSub = document.getElementsByClassName('bar-sub3')[0];
+var minmap = document.getElementById('minmap0');
+var minmapSub = document.getElementById('bar-sub3');
 
 var minToggle = false;
 
@@ -238,57 +237,3 @@ minmap.onclick = function () {
   }
 };
 
-// 우클릭 방지
-document.addEventListener('contextmenu', function (e) {
-  e.preventDefault();
-});
-
-// 로드뷰
-var roadviewBt = document.getElementsByClassName('loadviewBt')[0];
-var loadview = document.getElementsByClassName('loadview')[0];
-var loadviewIcon = document.getElementsByClassName('loadviewIcon')[0];
-
-var roadToggle = false;
-
-roadviewBt.addEventListener('contextmenu', function () {
-  loadview.style.display = 'block';
-  roadToggle = true;
-});
-
-loadviewIcon.onclick = function () {
-  loadview.style.display = 'none';
-  roadToggle = false;
-};
-
-// 면적
-var area = document.getElementsByClassName('bar_icon10')[0];
-var areaDiv = document.getElementsByClassName('area')[0];
-
-area.onclick = function () {
-  areaDiv.style.display = 'flex';
-};
-area.addEventListener('contextmenu', function () {
-  areaDiv.style.display = 'none';
-});
-
-// 거리
-var radius = document.getElementsByClassName('bar_icon9')[0];
-var radiusDiv = document.getElementsByClassName('radius')[0];
-
-radius.onclick = function () {
-  radiusDiv.style.display = 'flex';
-};
-radius.addEventListener('contextmenu', function () {
-  radiusDiv.style.display = 'none';
-});
-
-// 반경
-var capital = document.getElementsByClassName('bar_icon11')[0];
-var capitalDiv = document.getElementsByClassName('capital')[0];
-
-capital.onclick = function () {
-  capitalDiv.style.display = 'flex';
-};
-capital.addEventListener('contextmenu', function () {
-  capitalDiv.style.display = 'none';
-});
